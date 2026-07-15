@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>abd</h1>
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Password</td>
+    </tr>
 </body>
 </html>
