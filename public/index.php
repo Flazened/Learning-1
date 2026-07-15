@@ -25,9 +25,9 @@
     <title>Document</title>
 </head>
 <body>
-    <tr>
-        <td></td>
-        <td></td>
+    <tr class="">
+        <td><a href="includes/login.php" class="btn btn-primary">Login</a></td>
+        <td><a href="includes/register.php" class="btn btn-secondary">Register</a></td>
         <td></td>
     </tr>
 </body>
