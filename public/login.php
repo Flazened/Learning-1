@@ -8,6 +8,8 @@ include "../includes/footer.php";
 if(isset($_POST['username'])){
     $username = $_POST["username"];
     $password = $_POST["password"];
+} else {
+    echo "Username dan Password tidak ditemukan";
 }
 
 
@@ -16,10 +18,10 @@ if(isset($_POST['username'])){
 
     <form method="POST">
         <label>Username</label>
-        <input name="username" type="text">
+        <input name="username" type="text"><br>
 
         <label>Password</label>
-        <input name="password" type="password">
+        <input name="password" type="password"><br>
         <button>Kirim</button>
     </form>
 
