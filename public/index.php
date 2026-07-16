@@ -26,7 +26,7 @@
 </head>
 <body>
     <tr class="">
-        <td><a href="login.php" class="btn btn-primary">Login</a></td>
+        <td><a href="login.php" class="btn btn-primary" class="">Login</a></td>
         <td><a href="register.php" class="btn btn-secondary">Register</a></td>
         <td></td>
     </tr>
