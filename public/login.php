@@ -2,7 +2,9 @@
 $judul = "Login";
 $nama = "username";
 $password = "password";
+include "config/database.php";
 include "includes/header.php";
+
 
 if(isset($_POST['username'])){
     $nama = $_POST["username"];
