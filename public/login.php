@@ -15,6 +15,6 @@ if(isset($_POST['username'])){
     <form method="POST">
         <input name="username" type="text">
         <input name="password" type="password">
-        <button>Kirim</button>a
+        <button>Kirim</button>
     </form>
 </body>
