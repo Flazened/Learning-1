@@ -1,22 +1,25 @@
 <?php
 $judul = "Login";
-$nama = "username";
-$password = "password";
-include "config/database.php";
-include "includes/header.php";
+include "../config/database.php";
+include "../includes/header.php";
+include "../includes/footer.php";
 
 
 if(isset($_POST['username'])){
-    $nama = $_POST["username"];
+    $username = $_POST["username"];
     $password = $_POST["password"];
 }
 
 
 ?>
-<body>
+
+
     <form method="POST">
+        <label>Username</label>
         <input name="username" type="text">
+
+        <label>Password</label>
         <input name="password" type="password">
         <button>Kirim</button>
     </form>
-</body>
+

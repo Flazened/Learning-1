@@ -6,6 +6,4 @@
     <title><?php echo $judul; ?></title>
 </head>
 <body>
-
-</body>
-</html>
+    <h1>Ini adalah halaman, <?= $judul ?></h1>
