@@ -2,15 +2,12 @@
 $judul = "Login";
 include "../config/database.php";
 include "../includes/header.php";
-include "../includes/footer.php";
 
 
 if(isset($_POST['username'])){
     $username = $_POST["username"];
     $password = $_POST["password"];
-} else {
-    echo "Username dan Password tidak ditemukan";
-}
+} 
 
 
 ?>
@@ -25,3 +22,6 @@ if(isset($_POST['username'])){
         <button>Kirim</button>
     </form>
 
+<?php
+include "../includes/footer.php";
+?>
