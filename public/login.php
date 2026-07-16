@@ -1,16 +1,20 @@
 <?php
 $judul = "Login";
+$nama = "username";
+$password = "password";
 include "includes/header.php";
 
+if(isset($_POST['username'])){
+    $nama = $_POST["username"];
+    $password = $_POST["password"];
+}
+
+
 ?>
-<body></body>
-    <h1>Login</h1>
-    <form action="includes/login.php" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br>
-
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required><br>
-
-        <input type="submit" value="Login">
+<body>
+    <form method="POST">
+        <input name="username" type="text">
+        <input name="password" type="password">
+        <button>Kirim</button>
     </form>
+</body>
