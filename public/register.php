@@ -2,7 +2,13 @@
 $judul = "Register";
 include "../config/database.php";
 include "../includes/header.php";
-$username = $_POST['username'];
+if(isset($_POST['username'])){
+    $username = $_POST['username'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+}
 
 ?>
     <form method="POST">
