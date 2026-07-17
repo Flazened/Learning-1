@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $judul; ?></title>
+    <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
     <h1>Ini adalah halaman, <?= $judul ?></h1>
