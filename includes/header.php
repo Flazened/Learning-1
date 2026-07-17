@@ -7,4 +7,9 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-    <h1>Ini adalah halaman, <?= $judul ?></h1>
+    <h1>Ini adalah halaman, <?= $judul ?>!</h1>
+    <div class="Kotak normal">
+        <h1>
+            <p></p>
+        </h1>
+    </div>

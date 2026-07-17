@@ -5,7 +5,6 @@ include "../includes/header.php";
 $username = $_POST['username'];
 
 ?>
-    <h1>Register</h1>
     <form method="POST">
         <label>Username</label>
         <input name="username" type="text"><br>
