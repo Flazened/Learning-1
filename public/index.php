@@ -1,5 +1,5 @@
 <?php
-$judul = "Halaman Utama";
+$judul = "Landing Page";
 include "../includes/header.php";
 
 ?>
