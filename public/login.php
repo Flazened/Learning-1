@@ -7,6 +7,10 @@ include "../includes/header.php";
 if(isset($_POST['username'])){
     $username = $_POST["username"];
     $password = $_POST["password"];
+    $sql = "SELECT * FROM users where username = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt -> execute ([$username]);
+    
 } 
 
 
