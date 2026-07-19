@@ -7,6 +7,7 @@ if(isset($_POST['username'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $password = password_hash ($password, PASSWORD_DEFAULT);
     $sql= "INSERT INTO users (username, name, email, password) VALUES (?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     $stmt -> execute([$username, $name, $email, $password]);
