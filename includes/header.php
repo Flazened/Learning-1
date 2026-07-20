@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
+    <div class="bg-orange">
+        Son 💔
+    </div>
     <h1>Ini adalah halaman, <?= $judul ?>!</h1>
     <div class="Kotak normal">
         <h1>

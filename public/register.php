@@ -1,7 +1,9 @@
 <?php
 $judul = "Register";
 include "../config/database.php";
-include "../includes/header.php";
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 if(isset($_POST['username'])){
     $username = $_POST['username'];
     $name = $_POST['name'];
@@ -11,7 +13,10 @@ if(isset($_POST['username'])){
     $sql= "INSERT INTO users (username, name, email, password) VALUES (?,?,?,?)";
     $stmt = $pdo->prepare($sql);
     $stmt -> execute([$username, $name, $email, $password]);
+    header('location: index.php');
 }
+
+include "../includes/header.php";
 
 ?>
     <form method="POST">
@@ -21,8 +26,8 @@ if(isset($_POST['username'])){
         <label>Name</label>
         <input name="name" type="text"><br>
 
-        <label>Gmail</label>
-        <input name="email" type="text"><br>
+        <label>Email</label>
+        <input name="email" type="email"><br>
 
         <label>Password</label>
         <input name="password" type="password"><br>
