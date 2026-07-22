@@ -2,7 +2,13 @@
 $judul = "Landing Page";
 include "../includes/header.php";
 
+
+
+
 ?>
+<div class="bg-orange-500 w-full h-16">
+    kotak
+</div>
 
     <tr class="">
         <td><a href="login.php" class="btn btn-primary" class="">Login</a></td>
